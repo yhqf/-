@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>校友网 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #001845;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        nav.logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* 搜索框样式 */
+        nav.search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        nav.search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        nav.search-bar button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        /* 右上角按钮容器样式 */
+        nav.button-container {
+            display: flex;
+        }
+
+        /* 登录/注册按钮样式 */
+        nav.button-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        /* 轮播图样式 */
+        #carousel {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* 活动和新闻展示样式 */
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #001845;
+            padding-bottom: 5px;
+        }
+
+        /* 校友活动样式 */
+        #events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #events.event {
+            background-color: #fff;
+            width: 30%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        #events.event img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* 校友新闻样式 */
+        #news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #news.article {
+            background-color: #fff;
+            width: 48%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        #news.article h3 {
+            margin-top: 0;
+        }
+    </style>
+	<script src="js/cg.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="logo">校友网</div>
+        <ul>
+            <li>首页</li>
+            <li>校友活动</li>
+            <li>校友新闻</li>
+            <li>校友社区</li>
+            <li>关于我们</li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="搜索校友、活动、新闻">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="button-container">
+            <span>
+				<button ><a href="登录.html">登录</a></button>
+				<button ><a href="注册.html">注册</a></button>
+			</span>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
